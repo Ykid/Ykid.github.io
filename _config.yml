@@ -1,82 +1,23 @@
-# Welcome to Jekyll!
+# Permalinks
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
 
-# Site settings
-title: Wistmoyl's blog
-description: > # this means to ignore newlines until "baseurl:"
-  Hello! I am david. Here is my information
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-# twitter_username: not available
-# github_username:  ykid
+# Setup
+title:               Lanyon
+tagline:             'A Jekyll theme'
+description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:                 http://lanyon.getpoole.com
+baseurl:             ''
+paginate:            5
+gems: [jekyll-paginate]
 
-# Build settings
-markdown: kramdown
-kramdown:
-  input: GFM #github flavored markdown
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
-      layout: "default"
-  -
-    scope:
-      path: "projects"
-      type: "pages" # previously `page` in Jekyll 2.2.
-    values:
-      layout: "project" # overrides previous default layout
+# About/contact
+author:
+  name:              Mark Otto
+  url:               https://twitter.com/mdo
+  email:             markdotto@gmail.com
 
-##########about page
-
-# Site settings
-name: Wistmoyl
-
-# Delete the lines you don't need
-# about 5 elements are recomended
-github_username:  ykid
-#codepen_username: your_codepen_username_goes_here
-#facebook_username: your_facebook_username_goes_here
-#vk_username: your_vk_username_goes_here
-twitter_username: Jm_cabbage
-# google_plus_username: your_google_plus_username_goes_here
-# linkedin_username: your_linked_in_username_goes_here
-# vine_username:  your_vine_username_goes_here
-# instagram_username:  your_instagram_username_goes_here
-# flickr_username: your_flickr_username_goes_here
-# steam_username: your_steam_username_goes_here
-# soundcloud_username:  your_soundcloud_username_goes_here
-stack_of_username: 1798273/david
-# reddit_username: your_reddit_username_goes_here
-# medium_username:  your_medium_username_goes_here
-# tumblr_username: your_tumblr_username_goes_here
-# weibo_username: your_weibo_username_goes_here
-# lastfm_username: your_lastfm_username_goes_here
-blog_url: "../"
-# email: your-email@example.domain
-# public_key_url: "https://raw.pastebin.com/LINK-TO-PUBLIC-KEY"
-
-
-avatar: yes
-#avatar_img_path: "imgs/avatar.jpg""
-# You can link to your GitHub image. That way it will get updated
-# automatically whenever you change your GitHub profile picture
-avatar_img_path: "https://avatars2.githubusercontent.com/u/4862636?v=3&s=400"
-
-
-front_img: yes
-front_img_path: "imgs/background.jpg"
-#front_img_path: "https://external.url/image.jpg"
-
-
-favicon_img: yes
-favicon_img_path: "imgs/favicon.ico"
-
-#favicon_img_path: "https://external.url/favicon.ico"
-
-##########
+# Custom vars
+version:             1.0.0
